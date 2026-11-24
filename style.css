@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.indicadores-topo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: #e2e8f0;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-tab {
+    text-decoration: none;
+    color: #475569;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.btn-tab:hover {
+    background-color: #cbd5e1;
+}
+.btn-tab.ativo {
+    background-color: #2563eb;
+    color: white;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.introducao {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(210, 36, 36, 0.05);
+}
+
+.situacao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-situacao {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-situacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.tag-juros {
+    display: inline-block;
+    width: 200px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+}
+
+.descricao {
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+/* os graficos */
+.grafico-css {
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+}
+.barra-item span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.fundo-barra {
+    width: 100%;
+    background-color: #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.preenchimento {
+    padding: 4px 8px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 6px;
+}
+
+.verde { background-color: #10b981; }
+.azul { background-color: #2563eb; }
+.amarelo { background-color: #f59e0b; }
+.vermelho { background-color: #ef4444; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+div ul li {
+    list-style: none;
+}
+
+
+/* formulario email */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    gap: 15px;
+}
+
+.form-newsletter input[type="email"] {
+    padding: 10px 15px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 320px;
+}
+
+.form-newsletter button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADOR ECONÔMICO-CONSUMIDOR FINAL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div><h1>Indicadores econômicos</h1></div>
+        <div class="indicadores-topo">
+            <span class="indicador">Dólar: R$ 5,70</span>
+            <span class="indicador">Selic: 11,25%</span>
+            <span class="indicador">IPCA: 4,50%</span>
+        </div>
+    </header>
+    
+    <nav> 
+        <a href="index.html" class="btn-tab">GOVERNO</a>
+        <a href="empresa.html" class="btn-tab">EMPRESA</a>
+        <a href="consumidor.html" class="btn-tab ativo">CONSUMIDOR</a>
+    </nav>
+
+    <main>
+        <section class="introducao">
+            <h2>Decisões do Consumidor e Orçamento Familiar</h2>
+            <p>Veja como a inflação e as taxas de juros impactam diretamente o seu bolso no dia a dia e quais hábitos ajudam a manter o equilíbrio financeiro.</p>
+        </section>
+
+        <section class="situacao">
+            
+            <article class="card-situacao">
+                <h3>1. Poder de Compra e Inflação (IPCA)</h3>
+                <span class="tag-juros amarelo">Custo de Vida</span>
+                <div class="texto-informativo">
+                    <p><strong>O que acontece no bolso:</strong> Quando a inflação sobe, o dinheiro perde valor. Com os mesmos R$ 100,00 no supermercado, o consumidor passa a comprar menos itens do que comprava meses atrás.</p>
+                    <p><strong>Boas práticas para se proteger:</strong></p>
+                    <ul>
+                        <li><strong>Substituição inteligente:</strong> Trocar marcas líderes ou alimentos fora de época por opções similares mais baratas.</li>
+                        <li><strong>Lista e planejamento:</strong> Ir às compras com foco evita gastos por impulso que pesam no fim do mês.</li>
+                        <li><strong>Regra 50-30-20:</strong> Dividir a renda entre gastos essenciais (50%), desejos pessoais (30%) e reserva financeira (20%).</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-situacao">
+                <h3>2. Uso do Crédito vs. Compra à Vista</h3>
+                <span class="tag-juros azul">Consumo Consciente</span>
+                <div class="texto-informativo">
+                    <p><strong>O efeito dos juros (Selic):</strong> Em períodos de juros altos, parcelar compras no cartão de crédito ou fazer empréstimos fica muito mais caro, fazendo o produto custar bem acima do preço original.</p>
+                    <p><strong>Como tomar melhores decisões:</strong></p>
+                    <ul>
+                        <li><strong>Priorize o pagamento à vista:</strong> Sempre que possível, negocie descontos no Pix ou dinheiro em vez de parcelar.</li>
+                        <li><strong>Cuidado com o rotativo do cartão:</strong> Pagar apenas o mínimo da fatura gera uma bola de neve de juros compostos.</li>
+                        <li><strong>Reserva de emergência:</strong> Guardar um valor mensal evita recorrer a empréstimos caros diante de imprevistos.</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="newsletter">
+            <h3>Fique por dentro da economia</h3>
+            <p>Cadastre seu e-mail para receber semanalmente atualizações dos principais indicadores econômicos, dicas de gestão empresarial e orientações práticas para sua vida financeira.</p>
+            
+            <form action="#" method="post" class="form-newsletter">
+                <input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                <button type="submit">Quero receber</button>
+            </form>
+        </section>
+    </main>
+
+
+    
+    <footer>
+        <p>Projeto de Frontend - Simulador Econômico Educativo</p>
+    </footer>
+
+    
+</body>
+</html>

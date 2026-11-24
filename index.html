@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADOR ECONÔMICO-MACROECONOMIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><h1>Indicadores econômicos</h1></div>
+        <div class="indicadores-topo">
+            <span class="indicador">Dólar: R$ 5,70</span>
+            <span class="indicador">Selic: 11,25%</span>
+            <span class="indicador">IPCA: 4,50%</span>
+        </div>
+    </header>
+    
+    <nav> 
+        <a href="index.html" class="btn-tab ativo">GOVERNO</a>
+        <a href="empresa.html" class="btn-tab">EMPRESA</a>
+        <a href="consumidor.html" class="btn-tab">CONSUMIDOR</a>
+    </nav>
+
+    <main>
+        <section class="introducao">
+            <h2>Decisões do Banco Central e Governo</h2>
+            <p>Observe os cenários abaixo para analisar como a taxa básica de juros (Selic) afeta a economia do país.</p>
+        </section>
+
+        <section class="situacao">
+            
+            <article class="card-situacao">
+                <h3>Cenário 1: Juros Baixos</h3>
+                <span class="tag-juros verde">Selic a 4,0% ao ano</span>
+                <p class="descricao">Crédito barato estimula o consumo e empresas contratam mais, mas os preços sobem rápido.</p>
+                
+                <div class="grafico-css">
+                    <div class="barra-item">
+                        <span>Inflação (Alta)</span>
+                        <div class="fundo-barra"><div class="preenchimento vermelho" style="width: 85%;">8,5%</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Geração de Empregos</span>
+                        <div class="fundo-barra"><div class="preenchimento verde" style="width: 90%;">Alta</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Crescimento do PIB</span>
+                        <div class="fundo-barra"><div class="preenchimento azul" style="width: 75%;">4,2%</div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-situacao">
+                <h3>Cenário 2: Equilíbrio</h3>
+                <span class="tag-juros azul">Selic a 10,5% ao ano</span>
+                <p class="descricao">Taxa neutra. Mantém a inflação dentro da meta sem travar totalmente os investimentos.</p>
+                
+                <div class="grafico-css">
+                    <div class="barra-item">
+                        <span>Inflação (Controlada)</span>
+                        <div class="fundo-barra"><div class="preenchimento amarelo" style="width: 45%;">4,5%</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Geração de Empregos</span>
+                        <div class="fundo-barra"><div class="preenchimento verde" style="width: 60%;">Média</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Crescimento do PIB</span>
+                        <div class="fundo-barra"><div class="preenchimento azul" style="width: 50%;">2,5%</div></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-situacao">
+                <h3>Cenário 3: Juros Altos</h3>
+                <span class="tag-juros vermelho">Selic a 15,0% ao ano</span>
+                <p class="descricao">Financiamentos ficam caros, o consumo cai, a inflação recua, mas o desemprego aumenta.</p>
+                
+                <div class="grafico-css">
+                    <div class="barra-item">
+                        <span>Inflação (Baixa)</span>
+                        <div class="fundo-barra"><div class="preenchimento verde" style="width: 25%;">2,8%</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Geração de Empregos</span>
+                        <div class="fundo-barra"><div class="preenchimento vermelho" style="width: 20%;">Baixa</div></div>
+                    </div>
+                    <div class="barra-item">
+                        <span>Crescimento do PIB</span>
+                        <div class="fundo-barra"><div class="preenchimento azul" style="width: 15%;">0,5%</div></div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+
+    
+    <section class="newsletter">
+        <h3>Fique por dentro da economia</h3>
+        <p>Cadastre seu e-mail para receber semanalmente atualizações dos principais indicadores econômicos, dicas de gestão empresarial e orientações práticas para sua vida financeira.</p>
+        
+        <form action="#" method="post" class="form-newsletter">
+            <input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+            <button type="submit">Quero receber</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Projeto de Frontend - Simulador Econômico Educativo</p>
+    </footer>
+
+</body>
+</html>
